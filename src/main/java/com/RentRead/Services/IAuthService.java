@@ -10,7 +10,7 @@ import com.RentRead.Models.User;
 public interface IAuthService {
     public User registerUser(UserRegisterRequest request) throws UserAlreadyExistException;
 
-    public User login(LoginRequest request);
+    public String login(LoginRequest request);
 
     public RentBookResponse getUserById(Long id) throws UserNotFoundException;
 }
